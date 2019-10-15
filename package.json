@@ -12,7 +12,7 @@
   "scripts": {
     "test": "tape test/*.js",
     "lint": "standard",
-    "doc": "jsdoc2md --files src/client.js src/cabal-details.js --param-list-format list --separators > api.md"
+    "doc": "jsdoc2md --files src/client.js src/cabal-details.js --param-list-format list --separators --partial doc-gen/scope.hbs --helper doc-gen/helpers.js > api.md"
   },
   "keywords": [],
   "dependencies": {
